@@ -1,0 +1,182 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+/*  */
+/* merriweather-sans-regular - latin */
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0 15%;
+  font-family: "Oswald", sans-serif;
+}
+hr {
+  width: 30%;
+  background-color: lightgrey;
+  height: 2px;
+  
+}
+h1 {
+  text-align: center;
+  margin-top:16px;
+}
+.container {
+border: 2px solid lightgray;
+border-radius: 8px;
+margin: 16px;
+min-width:200px;
+}
+
+.color-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding:8px;
+  gap:8px 8px;
+}
+
+.color-tab {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 5px;
+  color:black;
+  flex:1 250px ;
+  min-height: 10vh;
+}
+.color-tab.first{
+  background-color: #72A0C1;
+}
+.color-tab.second{
+  background-color: #2B3856;
+}
+.color-tab.third{
+  background-color: #E5E4E2;
+}
+.color-tab.forth{
+  background-color: #EBF4FA;
+}
+
+
+.fonts-container .font-label {
+  text-decoration: underline;
+  font-size: 20px;
+  margin: 12px;
+}
+
+.fonts-container p {
+  margin-left: 32px;
+}
+
+.fonts-container {
+  margin-bottom: 12px;
+}
+.oswald {
+  font-family: "Oswald";
+}
+
+.merriweather {
+  font-family: "Merriweather";
+}
+.georgia {
+  font-family: Georgia,serif;
+}
+
+.regular {
+font-style: normal;
+}
+
+.bold {
+font-weight: 900;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.text-tab {
+  margin: 12px 12px;
+}
+
+.text-tab>:first-child {
+  margin-top: 16px ;
+  margin-bottom: 12px ;
+}
+
+.text-tab h1 {
+  text-align: left;
+  font-size: 32px;
+  font-family: "Oswald";
+  font-style: bold;
+  margin-left:12px;
+}
+.text-tab h2 {
+  font-size: 20px;
+  font-family: "Merriweather";
+  font-style: bold;
+  margin-left: 12px;
+}
+.text-tab p {
+  margin-left: 12px;
+  font-family: Georgia,serif;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+::marker {
+  font-size: 1.1em;
+  align-content: center;
+}
+.text-tab>ul li {
+margin-left: 32px;
+font-size: 16px;
+list-style: inside circle;
+}
+
+.container {
+  padding : 8px;
+}
+
+.buttons-tab {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding:8px;
+  gap:8px 8px;
+}
+
+.btn {
+  font-family: Oswald, sans-serif;
+  font-size:20px;
+  margin: 12px;
+  width:120px;
+  height: 45px;
+  border-radius: 10px;
+  box-shadow: 1px 2px 5px 3px #E5E4E2;
+  border: none;
+}
+.btn.one {
+  background-color: #2B3856;
+  color:white
+}
+.btn.two {
+  background-color: #72A0C1;
+  color:white
+}
+.btn:hover {
+  transform: scale(105%) rotate(1deg);
+}
+
+@media  screen and (max-width: 480px) {
+  body, .container{
+    margin:8px;
+  }
+  html {
+    min-width: 300px;
+  }
+}
